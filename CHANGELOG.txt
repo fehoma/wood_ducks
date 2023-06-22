@@ -24,3 +24,7 @@ Individual observations were combined in the tidy_data.xlsx file. The following 
 We made a plot of the mass vs number of hatched eggs (it looked ugly)
 The mass was log transformed to increase the visibility of the plot
 We added a linear regression line to the plot.
+
+## [1.2.0] - 2023-06-22
+### Added
+New MIT license file added
