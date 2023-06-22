@@ -1,0 +1,26 @@
+# Changelog
+
+ All notable changes to this project will be documented in this file.
+
+ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.0] - 2023-06-22
+### Added
+
+Data preprocessing
+
+This is a project about wood ducks.
+Raw data contains one file per each observation.
+Individual observations were combined in the tidy_data.xlsx file. The following tidying steps were taken:
+1. Missing, unknown, empty, etc. were set to value "N/A"
+2. Changed the variable names to include the units (we assume temperature was recorded in celsius)
+3. Some unsure values ("probably 14" and "5?" total number of eggs for observations A1B and U10C) were set to the estimated value, and the variable name was changed to include "(estimated)"
+4. Changed the mass values to gram units (because all values seemed to be around 500 grams)
+5. Saved as a .csv with "," delimiter
+
+## [1.1.0] - 2023-06-22
+  ### Added
+We made a plot of the mass vs number of hatched eggs (it looked ugly)
+The mass was log transformed to increase the visibility of the plot
+We added a linear regression line to the plot.
